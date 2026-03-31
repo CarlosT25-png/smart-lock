@@ -1,0 +1,48 @@
+dependencies:
+  chill-sam/ssd1306:
+    component_hash: 6be33faa92d913d198ef61f70d58708c4cebd5c93e74cf3e2a43446877cf04f6
+    dependencies:
+    - name: idf
+      require: private
+      version: '>=5.3'
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    targets:
+    - esp32
+    - esp32s2
+    - esp32s3
+    - esp32c3
+    version: 1.1.2
+  espressif/cjson:
+    component_hash: 002c6d1872ee4c97d333938ebe107a29841cc847f9de89e676714bd2844057ea
+    dependencies:
+    - name: idf
+      require: private
+      version: '>=5.0'
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    version: 1.7.19~1
+  espressif/esp_websocket_client:
+    component_hash: c5a067a9fddea370c478017e66fac302f4b79c3d4027e9bdd42a019786cceb92
+    dependencies:
+    - name: idf
+      require: private
+      version: '>=5.0'
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    version: 1.6.1
+  idf:
+    source:
+      type: idf
+    version: 6.0.0
+direct_dependencies:
+- chill-sam/ssd1306
+- espressif/cjson
+- espressif/esp_websocket_client
+- idf
+manifest_hash: 32134aec9e6a16a4dfb085c818b8e2e572e812ba9965fb144767956b544c6ece
+target: esp32
+version: 3.0.0
