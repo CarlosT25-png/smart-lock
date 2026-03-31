@@ -1,16 +1,20 @@
 
 # Smart Lock
-This project project is an smart lock device targeting the ESP32, it features 3 types of input a 4x4 Keypad input, RFID Reader and Remote App Controller (using Secure WebSockets). Besides, that it features an 128x64 OLED screen to display the current state of the smart lock.
+This project project is an smart lock device targeting the ESP32, it features 3 types of input a 4x4 Keypad input, RFID Reader and Remote App Controller (using Secure WebSockets). Besides that, it features an 128x64 OLED screen to display the current state of the smart lock.
 The actual lock is a 12v solenoid that is connected through a 5v relay.
 
 This project is fully coded on embedded C.
-This project also connect to a PWA, you can find the code for that here: [GitHub Repo Smart Lock Web UI](https://github.com/CarlosT25-png/smart-lock-web-ui)
+This project also connect to a Progressive Web Application (PWA), you can find the code for that here: [GitHub Repo Smart Lock PWA](https://github.com/CarlosT25-png/smart-lock-web-ui)
 
 
 ## Screenshots
 
+
+![GIF](https://github.com/CarlosT25-png/smart-lock/blob/main/docs/SmartLockVideo.gif?raw=true)
+![GIF](https://github.com/CarlosT25-png/smart-lock/blob/main/docs/1.png?raw=true)
 ## Wiring Diagram
 
+![GIF](https://github.com/CarlosT25-png/smart-lock/blob/main/docs/SmartLock_bb.jpg?raw=true)
 ## Components List
 - 1x ESP32 (30 pin)
 - 1x OLED 128x64 (SSD1306)
@@ -54,6 +58,12 @@ You can run this project by cloning the github repo and running the following co
 ```
 
 Alternative, you can use the built-in icons on VS Code ESP-IDF Extension
+
+## WIFI Setup + WebSockets
+
+if you want to setup the wifi module with your Home Network, go the Wifi-ws library -> C File and make sure to set the wifi SSID and password of your home network.
+
+If you want activate the PWA, make sure to also replace the URL at the end of the C File (wifi-ws) and also the root certificate.
 ## Authors
 
 - [@CarlosT25-png](https://www.github.com/CarlosT25-png)
